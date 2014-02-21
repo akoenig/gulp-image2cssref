@@ -24,5 +24,15 @@
   "bugs": {
     "url": "https://github.com/akoenig/gulp-image2cssref/issues"
   },
-  "homepage": "https://github.com/akoenig/gulp-image2cssref"
+  "homepage": "https://github.com/akoenig/gulp-image2cssref",
+  "dependencies": {
+    "through2": "~0.4.1",
+    "slug": "~0.4.2",
+    "gulp-util": "~2.2.14"
+  },
+  "devDependencies": {
+    "gulp-jasmine": "~0.1.4",
+    "gulp-jshint": "~1.4.2",
+    "gulp": "~3.5.2"
+  }
 }
