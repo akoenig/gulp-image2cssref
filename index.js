@@ -34,6 +34,12 @@ module.exports = function (filename, namespace, baseDir) {
         throw new gutil.PluginError(MODULE_NAME, 'Please define the namespace of the CSS selectors.');
     }
 
+    /**
+     *
+     * Takes the given file and creates a CSS selector in which
+     * this file is referenced as background-image.
+     *
+     */
     function referencing (file, enc, callback) {
         var shorty = slug(path.basename(file.path, path.extname(file.path))),
             name   = path.basename(file.path);
@@ -43,6 +49,11 @@ module.exports = function (filename, namespace, baseDir) {
         return callback();
     }
 
+    /**
+     * Takes all generated CSS selectors and generates
+     * one CSS file from them.
+     *
+     */
     function finalize (callback) {
         var css = new gutil.File({
             path: filename,
@@ -56,5 +67,4 @@ module.exports = function (filename, namespace, baseDir) {
     }
 
     return through.obj(referencing, finalize);
-
 };
