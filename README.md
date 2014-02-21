@@ -1,4 +1,4 @@
-# gulp-image2cssref
+# gulp-image2cssref [![Build Status](https://travis-ci.org/akoenig/gulp-image2cssref.png?branch=master)](https://travis-ci.org/akoenig/gulp-image2cssref)
 
 > A gulp plugin that takes a bunch of image files and creates a CSS file in which these are referenced as background-images.
 
@@ -23,13 +23,12 @@ gulp.task('image2cssref', function () {
 });
 ```
 
-This example would generate one CSS file `my-ongs.css` with the following structure:
+This example would generate one CSS file `my-pngs.css` with the following structure:
 
 ```css
 
 .icon.icon-image1 {background-image:url(img/image1.png);}
 .icon.icon-image2 {background-image:url(img/image2.png);}
-
 ```
 
 ## Arguments
