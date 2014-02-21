@@ -1,0 +1,28 @@
+{
+  "name": "gulp-image2cssref",
+  "version": "0.1.0",
+  "description": "A gulp plugin that takes a bunch of image files and creates a CSS file where these are referenced.",
+  "author": {
+    "name": "André König",
+    "email": "andre.koenig@posteo.de"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akoenig/gulp-image2cssref"
+  },
+  "keywords": [
+    "gulpplugin",
+    "css",
+    "images",
+    "background-image"
+  ],
+  "bugs": {
+    "url": "https://github.com/akoenig/gulp-image2cssref/issues"
+  },
+  "homepage": "https://github.com/akoenig/gulp-image2cssref"
+}
